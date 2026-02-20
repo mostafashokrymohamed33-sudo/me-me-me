@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Flowers from "./flowers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,8 +20,41 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet"/>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+
+        <nav>
+          <a>Home</a>
+          <a>contact</a>
+          <a>cv</a>
+          <a>projects</a>
+        </nav>
         {children}
+        <svg>
+            <filter id="distortion">
+                <feTurbulence 
+                    type="fractalNoise" 
+                    baseFrequency="0.01 0.02"
+                    numOctaves="1"
+                    seed="5"
+                    result="turbulence"
+                />
+                <feGaussianBlur
+                    in="turbulence"
+                    stdDeviation="3"
+                    result="softmap"
+                />
+                <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="softmap"
+                    scale="150"
+                />
+            </filter>
+        </svg>
       </body>
     </html>
   );
