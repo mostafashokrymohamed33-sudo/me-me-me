@@ -333,6 +333,7 @@ nav{
           font-size: 100%;
         }
         .image{
+          flex-grow: 1;
           padding: 60px;
           border-radius: 20px;
           .title{
@@ -346,9 +347,6 @@ nav{
     }
   }
 }
-
-
-
 
 .contactCard{
   background-color: var(--clr3);

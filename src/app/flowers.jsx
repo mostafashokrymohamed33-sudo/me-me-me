@@ -105,7 +105,6 @@ export default function Flowers() {
                     transparent: true,
                     metalness: .4,
                     roughness: .1,
-                    wireframe:(i%2==0),
                 })
             );
             card.position.x = i * 0.15; 
