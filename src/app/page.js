@@ -43,7 +43,6 @@ const socialLinks = [
         }
 ];
 const projects=[
-  
   {
     name:"Eco-Saver-Platform",
     link:"https://eco3-two.vercel.app/",
@@ -184,6 +183,7 @@ export default function Home() {
             }
           </div>
         <Email/>
+        <div style={{border:"solid black"}}></div>
     </div>
   );
 }
