@@ -16,6 +16,7 @@ export default function Email( ){
         })
     }
     return<form ref={formRef} onSubmit={sendEmail} className="gmail-js">
+            <h4>Contact Me :--</h4>
             <div>
                 <input type="text" name="name" placeholder="Your Name" required/>
                 <input type="email" name="email" placeholder="Your Email" required/>

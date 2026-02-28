@@ -318,7 +318,7 @@ nav{
       flex-wrap: wrap;
     }
     input {
-        font-size: 200%;
+        font-size: 150%;
         padding: 10px 20px;
         border: solid 1px;
         border-radius: 100px;
@@ -334,6 +334,15 @@ nav{
       padding: 30px;
       height: 300px;
       color: aliceblue;
+    }
+    h4{
+      align-self: flex-start;
+      font-size: 300%;
+      margin: 0px;
+      border-radius: 40px;
+      padding: 20px 30px;
+      background-color: var(--clr3);
+      color: var(--clr2);
     }
   }
 }
@@ -378,6 +387,13 @@ nav{
           }
         }
        }
+    }
+    .gmail-js{
+      input{
+        min-width: 0%;
+        width: 100%;
+        font-weight: 0%;
+      }
     }
   }
 }
