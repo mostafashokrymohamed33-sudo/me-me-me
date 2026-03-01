@@ -326,6 +326,11 @@ nav{
         color: white;
         flex-grow: 1;
         min-width: 400px;
+        transition: .1s;
+        cursor: pointer;
+        &:hover{
+          background-color: var(--clr1);
+        }
     }
     textarea{
       width: 100%;
@@ -334,6 +339,10 @@ nav{
       padding: 30px;
       height: 300px;
       color: aliceblue;
+    }
+    .submit{
+      background-color: var(--clr3);
+      color: var(--clr2);
     }
     h4{
       align-self: flex-start;

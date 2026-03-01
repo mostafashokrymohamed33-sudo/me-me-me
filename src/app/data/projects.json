@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Eco-Saver-Platform",
+    "link": "https://eco3-two.vercel.app/",
+    "url": "/ecoProject.png",
+    "disc": "A modern environmental awareness platform designed to help users understand climate issues, track pollution levels, and learn tips for protecting the planet. Built with a clean UI and interactive features that encourage users to adopt eco-friendly habits and explore global environmental data.",
+    "tools": ["THREE.js", "NEXT.js"]
+  },
+  {
+    "name": "3D-Weather-App",
+    "link": "https://3d-wheater-website.vercel.app/",
+    "url": "/screencapture-localhost-3001-2025-12-10-14_19_08.png",
+    "disc": "An interactive weather application built with Next.js, providing a smooth user experience to display current and forecasted weather for any city worldwide. This is a single-page application (SPA) with a modern and dynamic design using powerful visualization libraries like Three.js and Chart.js.",
+    "tools": ["THREE.js", "CHART.js", "OpenWeather-API", "NEXT.js"]
+  },
+  {
+    "name": "Memory-Card",
+    "link": "https://memory-card-game-by-next-js.vercel.app/",
+    "url": "/screencapture-localhost-3000-2026-02-13-09_18_07.png",
+    "disc": "A fun and interactive memory card game built with Next.js, where players flip cards to find matching pairs. The game features smooth animations, score tracking, and responsive design for all devices.",
+    "tools": ["Next.js only"]
+  },
+  {
+    "name": "Quraan-web",
+    "link": "https://quran-website-next-v-44m2.vercel.app/",
+    "url": "/quraanProject.png",
+    "disc": "A comprehensive Quran platform allowing you to listen to 5 different reciters, featuring interactive reading with verse highlighting, or choosing between reading-only and listening-only modes for a seamless experience.",
+    "tools": ["Quran-API", "NEXT.js"]
+  },
+  {
+    "name": "AI exame generator",
+    "link": "https://ai-test-generator-mu.vercel.app/",
+    "url": "/AI-exameProject.png",
+    "disc": "An interactive AI-powered chat platform built to engage users through natural conversation, guiding them step by step based on their input, then generating a personalized exam that evaluates their understanding according to the discussion.",
+    "tools": ["AI", "NEXT.js"]
+  },
+  {
+    "name": "Weather-App",
+    "link": "https://mostafashokrymohamed33-sudo.github.io/frontend-cours-task-Weather-websiet/",
+    "url": "/2dWeatherProject.png",
+    "disc": "An interactive weather application built with Next.js, providing a smooth user experience to display current and forecasted weather for any city worldwide.",
+    "tools": ["CHART.js", "OpenWeather-API", "HTML", "CSS", "JavaScript"]
+  }
+]

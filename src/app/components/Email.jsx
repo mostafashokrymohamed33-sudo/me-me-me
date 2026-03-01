@@ -15,7 +15,7 @@ export default function Email( ){
             console.log(err)
         })
     }
-    return<form ref={formRef} onSubmit={sendEmail} className="gmail-js">
+    return<form id="Contact" ref={formRef} onSubmit={sendEmail} className="gmail-js">
             <h4>Contact Me :--</h4>
             <div>
                 <input type="text" name="name" placeholder="Your Name" required/>
@@ -23,6 +23,6 @@ export default function Email( ){
                 <input type="text" name="phone" placeholder="Phone Number optional"/>
             </div>
             <textarea onChange={(e)=>{setMessage(e.target.value)}} value={message} name="message" placeholder="Your Message for examle : Hi Mostafa iam falling in love with you , are you single?"></textarea>
-            <input type="submit" value={"send"} style={{color:"gray",backgroundColor:"white"}} />
+            <input type="submit" value={"send"} className="submit" />
         </form>
 }

@@ -4,57 +4,12 @@ import { useEffect,useState,useRef } from "react";
 import {OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { TextureLoader } from "three/src/loaders/TextureLoader.js";
 import { RoundedBoxGeometry, Wireframe } from "three-stdlib";
-import { DecalGeometry } from "three-stdlib";
-
-
+import  socialLinks  from "./data/socialLinks.json";
+import  skills  from "./data/skills.json";
 
 export default function Flowers() {
     const canvasRef=useRef(null);
     const divRef=useRef(null);
-    const socialLinks = [
-        {
-            name: "Facebook",
-            url: "https://facebook.com/youraccount",
-            color: "#1877F2",
-            icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
-        },
-        {
-            name: "Instagram",
-            url: "https://instagram.com/youraccount",
-            color: "#E1306C",
-            icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
-        },
-        {
-            name: "GitHub",
-            url: "https://github.com/youraccount",
-            color: "#181717",
-            icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg"
-        },
-        {
-            name: "LinkedIn",
-            url: "https://linkedin.com/in/youraccount",
-            color: "#0A66C2",
-            icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
-        },
-        {
-            name: "WhatsApp",
-            url: "https://wa.me/yourphonenumber",
-            color: "#25D366",
-            icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
-        }
-    ];
-    const skills = [
-    "Three.js",
-    "JavaScript",
-    "Chart.js",
-    "React.js",
-    "Next.js",
-    "Redux",
-    "Git & GitHub",
-    "HTML",
-    "CSS",
-    "Bootstrap"
-    ]
     useEffect(()=>{
 
         window.addEventListener("scroll",()=>{
@@ -147,8 +102,8 @@ export default function Flowers() {
         
         <div className="intro " ref={divRef}>
             <h1>
-            Hi! my name mostafa junior <br/>
-            and i'm junior Front-End Developer </h1>
+            Hi! iam mostafa<br/>
+            d i'm junior Front-End Developer </h1>
             <div className="skills bulr-int">
                 {skills.map((item,i)=>{
                     return <span key={i} style={{animationDuration:`${i*.5}s`}}>{item}</span>

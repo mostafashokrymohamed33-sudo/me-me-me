@@ -29,10 +29,9 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
 
         <nav>
-          <a>Home</a>
-          <a>contact</a>
-          <a>cv</a>
-          <a>projects</a>
+          <a href="Home">SHOKRY.com</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Contact">Contact</a>
         </nav>
         {children}
         <svg>
