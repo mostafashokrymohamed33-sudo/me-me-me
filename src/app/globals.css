@@ -35,6 +35,7 @@ nav{
     letter-spacing: 3px;
     display: inline-block;
     cursor: pointer;
+    transition: .3s;
     &:hover{
       letter-spacing: 6px;
     }
@@ -356,6 +357,11 @@ nav{
   }
 }
 @media (max-width: 768px) {
+  nav{
+      font-size: 70%;
+      gap: 10px;
+      a{padding: 5px;border-left: solid 1px;border-right: solid 1px;}
+  }
   .home-page{
     .intro{
       h1{

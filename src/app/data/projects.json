@@ -1,5 +1,12 @@
 [
   {
+    "name": "Space-News-Platform",
+    "link": "https://space-news-web-site.vercel.app/",
+    "url": "/spacenews.png",
+    "disc": "A modern space news platform designed to provide users with the latest updates on space exploration, astronomy, and related topics. The platform features a clean UI and interactive elements that allow users to easily navigate through news articles, view multimedia content, and stay informed about the latest developments in the field of space science.",
+    "tools": ["NASA API","THREE.js", "NEXT.js"]
+  },
+  {
     "name": "Eco-Saver-Platform",
     "link": "https://eco3-two.vercel.app/",
     "url": "/ecoProject.png",

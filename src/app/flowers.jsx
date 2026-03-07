@@ -29,10 +29,7 @@ export default function Flowers() {
         const camera =new THREE.PerspectiveCamera(35,window.innerWidth/window.innerHeight,1,1000);
         camera.position.set(0.62,-7.73,1.67);
         camera.lookAt(0,0,0)
-        const renderer= new THREE.WebGLRenderer({
-            canvas:canvasRef.current,
-            alpha:true,
-        });
+        const renderer= new THREE.WebGLRenderer({canvas:canvasRef.current,alpha:true,});
 
 
         const ambientLight = new THREE.AmbientLight('rgba(255, 255, 255, 1)',2 ); // اللون، الشدة
@@ -89,11 +86,11 @@ export default function Flowers() {
                 cards[i].material.color.setRGB(gridiant,gridiant,gridiant);
             }
             const elapsedTime=clock.getElapsedTime();
-            requestAnimationFrame(animate);
-            controls.update();
+            // controls.update();
             pointLight1.position.x=Math.sin(elapsedTime*0.5)*5;
             pointLight2.position.x=Math.sin(elapsedTime*0.5)*-5;
             renderer.render (scene,camera);
+            requestAnimationFrame(animate);
         }
         animate()
     },[])
@@ -103,7 +100,7 @@ export default function Flowers() {
         <div className="intro " ref={divRef}>
             <h1>
             Hi! iam mostafa<br/>
-            d i'm junior Front-End Developer </h1>
+            i'm junior Front-End Developer </h1>
             <div className="skills bulr-int">
                 {skills.map((item,i)=>{
                     return <span key={i} style={{animationDuration:`${i*.5}s`}}>{item}</span>
