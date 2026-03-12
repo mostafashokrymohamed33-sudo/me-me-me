@@ -7,6 +7,13 @@
     "tools": ["NASA API","THREE.js", "NEXT.js"]
   },
   {
+    "name": "Todo-Platform",
+    "link": "https://todolistbynext.vercel.app/",
+    "url": "/todolist.png",
+    "disc": "A modern to-do list platform designed to help users manage tasks efficiently and stay organized.",
+    "tools": ["Canvas","NEXT.js"]
+  },
+  {
     "name": "Eco-Saver-Platform",
     "link": "https://eco3-two.vercel.app/",
     "url": "/ecoProject.png",
@@ -35,10 +42,10 @@
     "tools": ["Quran-API", "NEXT.js"]
   },
   {
-    "name": "AI exame generator",
+    "name": "JS-Exame-Platform",
     "link": "https://ai-test-generator-mu.vercel.app/",
     "url": "/AI-exameProject.png",
-    "disc": "An interactive AI-powered chat platform built to engage users through natural conversation, guiding them step by step based on their input, then generating a personalized exam that evaluates their understanding according to the discussion.",
+    "disc": "A JavaScript testing platform where users can see the correct answers and explanations after completing the exam. Currently, it works as a static exam, but we are developing it to generate customized exams based on three inputs: topic, difficulty level, and number of questions.",
     "tools": ["AI", "NEXT.js"]
   },
   {
