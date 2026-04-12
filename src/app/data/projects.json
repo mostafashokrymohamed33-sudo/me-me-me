@@ -1,4 +1,11 @@
-[
+[ 
+  {
+    "name": "Wallpaper Gallery App",
+    "link": "https://msh-wallpaper.vercel.app/",
+    "url": "/screencapture-msh-wallpaper-vercel-app-2026-04-12-22_56_00.png",
+    "disc": "A modern wallpaper gallery application that allows users to explore high-quality images from various categories using the Unsplash API. The app features search functionality, category filtering, pagination, and the ability to download images or add them to favorites. Built with a clean UI and smooth user experience, it ensures fast browsing and easy navigation.",
+    "tools": ["Unsplash API", "Next.js", "Redux"]
+  },
   {
     "name": "Space-News-Platform",
     "link": "https://space-news-web-site.vercel.app/",
