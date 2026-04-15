@@ -68,16 +68,17 @@ export default function Flowers() {
             cards.push(card);
         }
         renderer.setSize(window.innerWidth,window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio,2))
 
         window.addEventListener('resize',()=>{
             renderer.setSize(window.innerWidth,window.innerHeight);
             camera.aspect=window.innerWidth/window.innerHeight;
-            camera.updateProjectionMatrix(devicePixelRatio);
+            camera.updateProjectionMatrix();
         })
         
 
 
-        const controls =new OrbitControls(camera,renderer.domElement);
+        // const controls =new OrbitControls(camera,renderer.domElement);
         const clock =new THREE.Clock();
         function animate(){
             for (let i=0 ;i<cards.length; i++){
@@ -86,9 +87,8 @@ export default function Flowers() {
                 cards[i].material.color.setRGB(gridiant,gridiant,gridiant);
             }
             const elapsedTime=clock.getElapsedTime();
-            // controls.update();
-            pointLight1.position.x=Math.sin(elapsedTime*0.5)*5;
-            pointLight2.position.x=Math.sin(elapsedTime*0.5)*-5;
+            // pointLight1.position.x=Math.sin(elapsedTime*0.5)*5;
+            // pointLight2.position.x=Math.sin(elapsedTime*0.5)*-5;
             renderer.render (scene,camera);
             requestAnimationFrame(animate);
         }
@@ -96,7 +96,6 @@ export default function Flowers() {
     },[])
   
     return<>
-        
         <div className="intro " ref={divRef}>
             <h1>
             Hi! iam mostafa<br/>
