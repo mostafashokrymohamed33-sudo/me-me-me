@@ -39,13 +39,13 @@ export default function RootLayout({ children }) {
                 <feTurbulence 
                     type="fractalNoise" 
                     baseFrequency="0.01 0.02"
-                    numOctaves="1"
-                    seed="5"
+                    numOctaves="0"
+                    seed="10"
                     result="turbulence"
                 />
                 <feGaussianBlur
                     in="turbulence"
-                    stdDeviation="3"
+                    stdDeviation="10"
                     result="softmap"
                 />
                 <feDisplacementMap

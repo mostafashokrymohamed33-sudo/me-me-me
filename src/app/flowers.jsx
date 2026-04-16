@@ -19,10 +19,9 @@ export default function Flowers() {
                 document.querySelector('.intro').classList.remove('scroled')
             }
         })
-        divRef.current.addEventListener('mousemove',(e)=>{
-            let x=e.clientX/window.innerWidth;
-            console.log(x);
-        })
+        // divRef.current.addEventListener('mousemove',(e)=>{
+        //     let x=e.clientX/window.innerWidth;
+        // })
 
 
         const scene = new THREE.Scene();

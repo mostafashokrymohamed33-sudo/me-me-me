@@ -7,6 +7,13 @@
     "tools": ["Unsplash API", "Next.js", "Redux"]
   },
   {
+    "name": "Memory-Cards-Game",
+    "link": "https://memory-card-game-by-next-js.vercel.app/",
+    "url": "/screencapture-localhost-3000-2026-02-13-09_18_07.png",
+    "disc": "A fun and interactive memory card game built with Next.js, where players flip cards to find matching pairs. The game features smooth animations, score tracking, and responsive design for all devices.",
+    "tools": ["Next.js only"]
+  },
+  {
     "name": "Space-News-Platform",
     "link": "https://space-news-web-site.vercel.app/",
     "url": "/spacenews.png",
@@ -35,18 +42,18 @@
     "tools": ["THREE.js", "CHART.js", "OpenWeather-API", "NEXT.js"]
   },
   {
-    "name": "Memory-Card",
-    "link": "https://memory-card-game-by-next-js.vercel.app/",
-    "url": "/screencapture-localhost-3000-2026-02-13-09_18_07.png",
-    "disc": "A fun and interactive memory card game built with Next.js, where players flip cards to find matching pairs. The game features smooth animations, score tracking, and responsive design for all devices.",
-    "tools": ["Next.js only"]
-  },
-  {
     "name": "Quraan-web",
     "link": "https://quran-website-next-v-44m2.vercel.app/",
     "url": "/quraanProject.png",
     "disc": "A comprehensive Quran platform allowing you to listen to 5 different reciters, featuring interactive reading with verse highlighting, or choosing between reading-only and listening-only modes for a seamless experience.",
     "tools": ["Quran-API", "NEXT.js"]
+  },
+  {
+    "name": "Fake-Store-Platform",
+    "link": "https://e-commerce1-umber.vercel.app/",
+    "url": "/ecommerce1.png",
+    "disc": "This is a professional simulation of an e-commerce platform built for educational purposes. All product data, pricing, and transactions are handled via the Fake Store API and do not involve real-world commerce.",
+    "tools": ["FakeSote API", "Next.js", "Redux"]
   },
   {
     "name": "JS-Exame-Platform",

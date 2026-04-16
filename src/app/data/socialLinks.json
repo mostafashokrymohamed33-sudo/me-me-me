@@ -19,7 +19,7 @@
   },
   {
     "name": "LinkedIn",
-    "url": "https://linkedin.com/in/youraccount",
+    "url": "https://www.linkedin.com/in/mostafa-shokry-4154762ab/",
     "color": "#0A66C2",
     "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
   },
@@ -28,11 +28,5 @@
     "url": "https://api.whatsapp.com/send/?phone=201032955743&text&type=phone_number&app_absent=0",
     "color": "#25D366",
     "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
-  },
-  {
-    "name": "Gmail",
-    "url": "mailto:yourmail@gmail.com",
-    "color": "#D14836",
-    "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg"
   }
 ]
