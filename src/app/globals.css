@@ -1,0 +1,474 @@
+body{
+  margin: 0px;
+  background-attachment:fixed;
+  height: 100vh;
+  background-position: 100px 300px;
+  min-height: 300vh;
+  background-color:rgb(88, 88, 88);;
+}
+:root{
+  --clr1:black;
+  --clr2:rgb(116, 116, 116);
+  --clr3:rgb(210, 210, 210);
+}
+*{
+  box-sizing: border-box;
+  color: var(--clr1);
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  backdrop-filter: blur(3px);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  color: var(--clr1);
+  font-size: 110%;
+  a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      letter-spacing: 6px;
+    }
+  }
+  z-index: 2;
+}
+.home-page{
+  .intro{
+    transition: .4s;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px auto;
+    border: solid 1px rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.245);
+    background-image: radial-gradient(rgb(235, 235, 235),rgb(153, 153, 153));
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .back-canvas{
+      position: absolute;
+      z-index: -1;
+      top: 0px;
+      left: 0px;
+    }
+    h1{
+      font-size: 400%;
+      padding: 10px;
+      border-radius: 10px;
+      text-shadow: 0px 0px 1px var(--clr3);
+    }
+    .skills{
+      span{
+        display: inline-block;
+        margin: 10px;
+        border-radius: 50px;
+        color: var(--clr1);
+        padding: 10px;
+        font-size: 120%;
+        letter-spacing: 3px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.227);
+        overflow: hidden;
+        position: relative;
+        width: fit-content;
+        backdrop-filter: blur(1px)url(#distortion) ;
+        background-color: rgba(255, 255, 255, 0.257);
+      }
+    }
+    button{
+      padding: 10px;
+      color:  var(--clr2);
+      background-color: var(--clr3);
+      border-radius: 100px;
+      border: none;
+      position: fixed;
+      bottom:10px;
+      right:10px;
+      &:hover{
+        background-color: var(--clr1);
+      }
+    }
+    .social{
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      translate: -50% 0%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 10;
+      cursor: pointer;
+      border-radius: 100px;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.192);
+      a{
+        img{
+          padding: 15px;
+          border-radius: 20px;
+          width: 5vw;
+          height: 8vh;
+          aspect-ratio: 1/1;
+        }
+      }
+    }
+  }
+  .intro.scroled{
+    border-radius: 100px;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .projects{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    background-image: linear-gradient(rgb(88, 88, 88),var(--clr1));
+    h1{
+      background-color: var(--clr1);
+      color: var(--clr2);
+      font-weight: 100;
+      padding: 20px;
+      border-radius: 100px;
+      letter-spacing: 5px;
+      position: sticky;
+      top: 50px;
+    }
+    .card{
+      display: flex;
+      gap: 10px;
+      min-height: 400px;
+      width: 90%;
+      border-radius: 100px;
+      overflow: hidden;
+      padding: 30px;
+      transition: 1s;
+      height: 10px;
+      box-shadow: 0px 0px 100px ;
+      .dev{
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+        border-radius:100px ;
+      }
+      h2{
+        font-size: 440%;
+        margin: 0px;
+        letter-spacing: 5px;
+      }
+      .disc{
+        font-size: 155%;
+        text-shadow: 0px 10px 0px rgba(0, 0, 0, 0.252);
+        color:  var(--clr1);
+        transition: 2s;
+      }
+      .tools{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        span{
+          background-color: var(--clr2);
+          color: var(--clr3);
+          padding: 10px;
+          border-radius: 100px;
+          box-shadow: -5px 15px 3px rgba(0, 0, 0, 0.213);
+        }
+      }
+      .image{
+        align-items: center;
+        position: relative;
+        right: 100%;
+        overflow: hidden;
+        background-size: cover;
+        transition: 1s;
+        box-shadow: 0px 0px 20px var(--clr3);
+        background-position: 0 1000;
+        .title{
+          color: var(--clr3);
+          font-size: 350%;
+          text-shadow: 0px 0px 10px var(--clr3);
+          translate: 0px 0px;
+          text-align: center;
+        }
+        .go{
+          position: absolute;
+          bottom: 30px;
+          border: none;
+          padding: 10px;
+          border-radius: 100px;
+          background-color: var(--clr3);
+          cursor: pointer;
+          text-decoration: none;
+          transition: .3s;
+          &:hover{
+            background-color: var(--clr2);
+            color: var(--clr3);
+            text-shadow: 0px 0px 10px ;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+    .projectcard.observe{
+      color: transparent;
+      
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.377),-10px -10px 10px rgba(255, 255, 255, 0.048);
+      .disc{
+        color: var(--clr3);
+      }
+      .image{
+        right: 0%;
+        box-shadow: 30px 10px  rgba(0, 0, 0, 0.055);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        animation-name: projectImage;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+  .skillss{
+    background-color: var(--clr1);
+    min-height: fit-content;
+    height: 100vh;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    height: fit-content;
+      background-image:linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0),rgba(0, 0, 0, 0),rgb(0, 0, 0)), url("/backk.png") ;
+      background-size: 30%;
+      background-attachment: fixed;
+    .skillcard{
+      box-shadow: 0px 0px 100px black;
+      transition: 1s;
+      padding: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.453);
+      overflow: hidden;
+      position: relative;
+      border: solid 1px rgba(255, 255, 255, 0.305);
+      border-radius: 100px;
+      gap: 10px;
+      h6{
+        font-size: 200%;
+        margin: 0px;
+        border-radius: 100px;
+        position: relative;
+        z-index: 1;
+        color: rgba(255, 255, 255, 0.663);
+      }
+
+    }
+    .skillcard.show{
+      hr{
+        color: var(--clr3);
+      }
+    }
+  }
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(55, 55, 55);
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    gap: 40px;
+    .card{
+      flex-grow: 1;
+      color: var(--clr3);
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      border-bottom:solid 1px gray;
+      border-radius: 100px;
+      gap: 20px ;
+      flex-direction: column;
+      text-decoration: none;
+      letter-spacing: 3px;
+      img{
+        filter: invert(1) brightness(1);
+        height: 50px;
+      }
+    }
+  }
+  .gmail-js{
+    max-width: 100%;
+    color: var(--clr3);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color:#373737;
+    div{
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    input {
+        font-size: 150%;
+        padding: 10px 20px;
+        border: solid 1px;
+        border-radius: 100px;
+        background-color: transparent;
+        color: white;
+        flex-grow: 1;
+        min-width: 400px;
+        transition: .1s;
+        cursor: pointer;
+        &:hover{
+          background-color: var(--clr1);
+        }
+        &:focus{
+          background-color: var(--clr3);
+          color: var(--clr1);
+        }
+    }
+    textarea{
+      width: 100%;
+      background-color: transparent;
+      border-radius: 50px;
+      padding: 30px;
+      height: 300px;
+      color: aliceblue;
+    }
+    .submit{
+      background-color: var(--clr3);
+      color: var(--clr2);
+    }
+    h4{
+      align-self: flex-start;
+      font-size: 300%;
+      margin: 0px;
+      border-radius: 40px;
+      padding: 20px 30px;
+      color: var(--clr3);
+    }
+  }
+}
+@media (max-width: 768px) {
+  nav{
+      font-size: 70%;
+      gap: 10px;
+      a{padding: 5px;border-left: solid 1px;border-right: solid 1px;}
+  }
+  .home-page{
+    .intro{
+      h1{
+        font-size: 10vw;
+      }
+      .skills{
+        span{
+          font-size: 4vw;
+        }
+      }
+      .social{
+        box-shadow:none;
+      }
+    }
+    .projects{
+      .card{
+        flex-direction: column-reverse;
+        border: solid 1px rgba(128, 128, 128, 0.336);
+        border-radius: 30px;
+        .dev{
+          width: 100%;
+          gap: 10px;
+        }
+        .tools{
+          span{
+            font-size: 60%;
+          }
+        }
+        .disc{
+          font-size: 100%;
+        }
+        .image{
+          flex-grow: 1;
+          padding: 60px;
+          border-radius: 20px;
+          .title{
+            font-size: 150%;
+          }
+          .go{
+            bottom: 10px;
+          }
+        }
+       }
+    }
+    .gmail-js{
+      input{
+        min-width: 0%;
+        width: 100%;
+        font-weight: 0%;
+      }
+    }
+  }
+}
+
+.contactCard{
+  background-color: var(--clr3);
+  transition: 1s;
+  box-shadow: 0px 0px 100px var(--clr3);
+}
+.contactCard.show{
+  background-color: rgba(255, 0, 0, 0);
+  box-shadow: 0px 0px 0px ;
+  text-shadow: 0px 0px 10px;
+}
+.bulr-int{
+  span{
+    animation-name: blurint;
+    animation-iteration-count: 1;
+  }
+}
+@keyframes blurint{
+  0%{
+    translate: 0px -100px;
+    background-color:black ;
+    box-shadow: 0px 0px 100px;
+  }
+}
+@keyframes projectImage{
+  50%{
+    /* background-position: 100% ; */
+  }
+}
+.effect{
+            position: absolute;
+            overflow: hidden ;
+            backdrop-filter: blur(2px);
+            filter: url(#distortion);
+            height: 100%;
+            width: 100%;
+            border: solid rgba(255, 255, 255, 0);
+            top: 0px;
+}
+svg{
+  height: 0px ;
+  width: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+}

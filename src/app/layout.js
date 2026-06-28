@@ -1,0 +1,61 @@
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import Flowers from "./flowers";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata = {
+  title: "MOSTAFA SHOKRY",
+  description: "front end developer portfolio",
+  icons:{icon:"/logo.png"}
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet"/>
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+
+        <nav>
+          <a href="Home">SHOKRY.com</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Contact">Contact</a>
+        </nav>
+        {children}
+        <svg>
+            <filter id="distortion">
+                <feTurbulence 
+                    type="fractalNoise" 
+                    baseFrequency="0.01 0.02"
+                    numOctaves="0"
+                    seed="10"
+                    result="turbulence"
+                />
+                <feGaussianBlur
+                    in="turbulence"
+                    stdDeviation="10"
+                    result="softmap"
+                />
+                <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="softmap"
+                    scale="150"
+                />
+            </filter>
+        </svg>
+      </body>
+    </html>
+  );
+}
