@@ -55,6 +55,27 @@ export default function RootLayout({ children }) {
                 />
             </filter>
         </svg>
+        <svg>
+            <filter id="distortion2">
+                <feTurbulence 
+                    type="fractalNoise" 
+                    baseFrequency="0.02 0.01"
+                    numOctaves="0"
+                    seed="22"
+                    result="turbulence"
+                />
+                <feGaussianBlur
+                    in="turbulence"
+                    stdDeviation="100"
+                    result="softmap"
+                />
+                <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="softmap"
+                    scale="1500"
+                />
+            </filter>
+        </svg>
       </body>
     </html>
   );

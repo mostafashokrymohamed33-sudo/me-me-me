@@ -97,7 +97,7 @@ export default function Flowers() {
     return<>
         <div className="intro " ref={divRef}>
             <h1>
-            Hi! iam mostafa<br/>
+            Hi! iam Mostafa <br/>
             i'm junior Front-End Developer </h1>
             <div className="skills bulr-int">
                 {skills.map((item,i)=>{
